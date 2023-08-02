@@ -42,7 +42,7 @@ export default function StatsDisplay(
         settings.mode === 'forever' ? 'row' : {xs: "column", sm: 'row'}
       }
       justifyContent="space-between"
-      alignItems="center"
+      alignItems="flex-end"
       spacing={settings.mode === 'forever' ? 1 : {xs: 0, sm: 1}}
     >
       {wrongDisplay}
