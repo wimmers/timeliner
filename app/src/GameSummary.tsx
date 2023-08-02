@@ -1,5 +1,7 @@
 import React from "react";
-import { Box, Button, Typography } from "@mui/material";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
 import { useDispatch, useAppSettings, useAppState } from "./AppState";
 import LabelTextComponent from "./LabelTextComponent";
 
