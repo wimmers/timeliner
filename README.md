@@ -23,6 +23,7 @@ You can also switch between the two main game modes:
 Install and run:
 
 ```bash
+cd app
 npm install
 npm start
 ```
