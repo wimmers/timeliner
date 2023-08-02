@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/timeliner/static/js/main.fbe59f78.js",
+    "index.html": "/timeliner/index.html",
+    "main.fbe59f78.js.map": "/timeliner/static/js/main.fbe59f78.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.fbe59f78.js"
+  ]
+}
