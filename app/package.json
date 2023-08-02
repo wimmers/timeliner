@@ -1,0 +1,37 @@
+{
+  "name": "material-cra",
+  "version": "5.0.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "@emotion/react": "latest",
+    "@emotion/styled": "latest",
+    "@mui/icons-material": "^5.14.3",
+    "@mui/lab": "^5.0.0-alpha.137",
+    "@mui/material": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-scripts": "latest",
+    "typescript": "latest"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react-dom": "^18.2.7"
+  }
+}
