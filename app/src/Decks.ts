@@ -2,17 +2,25 @@ import events0 from './events.json';
 import events1 from './events1.json';
 import inventions from './inventions.json';
 import climate from './climate.json';
+import fashion from './fashion.json';
 
 export type event = {
   year: string | number,
   event: string,
   timestamp: number,
-  difficulty?: number
+  difficulty?: number,
+  url?: string,
+  info?: string,
+  thumbnailUrl?: string,
 };
 
+const fashionConverted = fashion.map(
+  event => ({...event, timestamp: event.year}));
+
 export const decks = [
-  {"name": "Basic", "value": events0 as event[]},
-  {"name": "Basic 1", "value": events1 as event[]},
+  {"name": "Easy 1", "value": events0 as event[]},
+  {"name": "Easy 2", "value": events1 as event[]},
   {"name": "Inventions", "value": inventions as event[]},
-  {"name": "Climate Change", "value": climate as event[]}
+  {"name": "Climate Change", "value": climate as event[]},
+  {"name": "Fashion", "value": fashionConverted as event[]}
 ];

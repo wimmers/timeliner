@@ -1,0 +1,546 @@
+[
+    {
+        "year": -30000,
+        "event": "Animal Skins",
+        "difficulty": 2,
+        "info": "Early humans use animal skins for clothing.",
+        "url": "https://en.wikipedia.org/wiki/History_of_clothing_and_textiles"
+    },
+    {
+        "year": -5000,
+        "event": "Loom Invention",
+        "difficulty": 3,
+        "info": "The invention of the loom revolutionizes textile production.",
+        "url": "https://en.wikipedia.org/wiki/Loom",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Pedal-driven-weaving-machine.jpg/150px-Pedal-driven-weaving-machine.jpg"
+    },
+    {
+        "year": -2700,
+        "event": "Silk Production in China",
+        "difficulty": 3,
+        "info": "Silk production begins in ancient China.",
+        "url": "https://en.wikipedia.org/wiki/History_of_silk",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Court_ladies_pounding_silk_from_a_painting_%28%E6%8D%A3%E7%BB%83%E5%9B%BE%29_by_Emperor_Huizong.jpg/150px-Court_ladies_pounding_silk_from_a_painting_%28%E6%8D%A3%E7%BB%83%E5%9B%BE%29_by_Emperor_Huizong.jpg"
+    },
+    {
+        "year": -2000,
+        "event": "Egyptian Linen",
+        "difficulty": 2,
+        "info": "Egyptians develop techniques to produce fine linen fabric.",
+        "url": "https://en.wikipedia.org/wiki/Linen",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Handkerchief.jpg/150px-Handkerchief.jpg"
+    },
+    {
+        "year": -1200,
+        "event": "Tailoring Guilds",
+        "difficulty": 3,
+        "info": "Tailoring guilds emerge during the Middle Ages.",
+        "url": "https://en.wikipedia.org/wiki/Tailor",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Raja_Daswani_Fitting.jpg/150px-Raja_Daswani_Fitting.jpg"
+    },
+    {
+        "year": -1250,
+        "event": "Fashion in the Mongol Empire",
+        "difficulty": 3,
+        "info": "The Mongol Empire influences fashion across Asia.",
+        "url": "https://en.wikipedia.org/wiki/History_of_Thai_clothing"
+    },
+    {
+        "year": -1400,
+        "event": "Decorative Buttons",
+        "difficulty": 2,
+        "info": "Decorative buttons become popular in Europe.",
+        "url": "https://en.wikipedia.org/wiki/Button",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Reserveknapper_til_Hans%27_uniform.jpg/150px-Reserveknapper_til_Hans%27_uniform.jpg"
+    },
+    {
+        "year": 1500,
+        "event": "Renaissance Fashion",
+        "difficulty": 4,
+        "info": "The Renaissance brings elaborate and luxurious garments.",
+        "url": "https://en.wikipedia.org/wiki/1500%E2%80%931550_in_Western_European_fashion",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/More_famB_1280x-g0.jpg/150px-More_famB_1280x-g0.jpg"
+    },
+    {
+        "year": 1600,
+        "event": "Corsets",
+        "difficulty": 4,
+        "info": "Corsets shape women's fashion during the Baroque era.",
+        "url": "https://en.wikipedia.org/wiki/History_of_corsets",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Woman%27s_corset_figured_silk_1730-1740.jpg/150px-Woman%27s_corset_figured_silk_1730-1740.jpg"
+    },
+    {
+        "year": 1650,
+        "event": "Wig Fashion",
+        "difficulty": 3,
+        "info": "Wigs become a common accessory in European courts.",
+        "url": "https://en.wikipedia.org/wiki/Peruke",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Hime_cut.jpg/150px-Hime_cut.jpg"
+    },
+    {
+        "year": 1700,
+        "event": "Hoopskirts",
+        "difficulty": 3,
+        "info": "Hoopskirts gain popularity in Western fashion.",
+        "url": "https://en.wikipedia.org/wiki/Hoopskirt",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Historical_Hoopskirts.jpg/150px-Historical_Hoopskirts.jpg"
+    },
+    {
+        "year": 1750,
+        "event": "Rococo Fashion",
+        "difficulty": 4,
+        "info": "Rococo fashion dominates the European court.",
+        "url": "https://en.wikipedia.org/wiki/Fashion_in_the_period_1750%E2%80%931795",
+        "status": "Could not resolve URL."
+    },
+    {
+        "year": 1800,
+        "event": "Regency Fashion",
+        "difficulty": 3,
+        "info": "Regency fashion reflects simplicity and high-waisted styles.",
+        "url": "https://en.wikipedia.org/wiki/Regency_era",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/George_IV_bust1.jpg/150px-George_IV_bust1.jpg"
+    },
+    {
+        "year": 1830,
+        "event": "Bloomers",
+        "difficulty": 3,
+        "info": "Amelia Bloomer introduces the women's clothing reform.",
+        "url": "https://en.wikipedia.org/wiki/Bloomers_(clothing)",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Bloomers.jpg/150px-Bloomers.jpg"
+    },
+    {
+        "year": 1850,
+        "event": "Crinoline",
+        "difficulty": 3,
+        "info": "Crinolines shape the silhouettes of women's dresses.",
+        "url": "https://en.wikipedia.org/wiki/Crinoline",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Princess_Dagmar_of_Denmark_with_her_dog.jpg/150px-Princess_Dagmar_of_Denmark_with_her_dog.jpg"
+    },
+    {
+        "year": 1870,
+        "event": "Bustles",
+        "difficulty": 3,
+        "info": "Bustles become fashionable to add volume to skirts.",
+        "url": "https://en.wikipedia.org/wiki/Bustle",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Bustle_c._1885.jpg/150px-Bustle_c._1885.jpg"
+    },
+    {
+        "year": 1880,
+        "event": "Sack Suit",
+        "difficulty": 3,
+        "info": "The sack suit becomes popular men's attire.",
+        "url": "https://en.wikipedia.org/wiki/Sack_suit",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Paul_Newman_1954.JPG/150px-Paul_Newman_1954.JPG"
+    },
+    {
+        "year": 1900,
+        "event": "Gibson Girl Style",
+        "difficulty": 2,
+        "info": "The Gibson Girl look symbolizes the independent woman.",
+        "url": "https://en.wikipedia.org/wiki/Gibson_Girl",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Gibson_Girl_by_Charles_Dana_Gibson.jpg/150px-Gibson_Girl_by_Charles_Dana_Gibson.jpg"
+    },
+    {
+        "year": 1910,
+        "event": "Hobble Skirt",
+        "difficulty": 3,
+        "info": "The hobble skirt restricts women's movement.",
+        "url": "https://en.wikipedia.org/wiki/Hobble_skirt",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/HobbleSkirtPostcard.jpg/150px-HobbleSkirtPostcard.jpg"
+    },
+    {
+        "year": 1920,
+        "event": "Flapper Era",
+        "difficulty": 4,
+        "info": "Flappers embrace shorter dresses and a liberated style.",
+        "url": "https://en.wikipedia.org/wiki/Flapper",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Louise_Brooks_ggbain_32453u_crop.jpg/150px-Louise_Brooks_ggbain_32453u_crop.jpg"
+    },
+    {
+        "year": 1930,
+        "event": "Golden Age of Hollywood",
+        "difficulty": 3,
+        "info": "Hollywood stars influence glamorous fashion trends.",
+        "url": "https://en.wikipedia.org/wiki/Hollywood_Golden_Age",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Clark_Gable_and_Vivien_Leigh_-_Wind.jpg/150px-Clark_Gable_and_Vivien_Leigh_-_Wind.jpg"
+    },
+    {
+        "year": 1940,
+        "event": "Utility Fashion",
+        "difficulty": 3,
+        "info": "WWII leads to practical utility clothing styles.",
+        "url": "https://en.wikipedia.org/wiki/1940s_in_fashion"
+    },
+    {
+        "year": 1950,
+        "event": "New Look by Dior",
+        "difficulty": 2,
+        "info": "Christian Dior introduces the elegant 'New Look' silhouette.",
+        "url": "https://en.wikipedia.org/wiki/Christian_Dior",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Christian_Dior_1954.jpg/150px-Christian_Dior_1954.jpg"
+    },
+    {
+        "year": 1960,
+        "event": "Swinging Sixties",
+        "difficulty": 3,
+        "info": "The '60s bring bold and mod fashion statements.",
+        "url": "https://en.wikipedia.org/wiki/Swinging_Sixties",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Londons_Carnaby_Street%2C_1966.jpg/150px-Londons_Carnaby_Street%2C_1966.jpg"
+    },
+    {
+        "year": 1970,
+        "event": "Hippie Style",
+        "difficulty": 3,
+        "info": "Hippie fashion embraces a bohemian and free-spirited look.",
+        "url": "https://en.wikipedia.org/wiki/Hippie",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Woodstock-kids.jpg/150px-Woodstock-kids.jpg"
+    },
+    {
+        "year": 1980,
+        "event": "Power Dressing",
+        "difficulty": 3,
+        "info": "Bold power dressing becomes popular in the workplace.",
+        "url": "https://en.wikipedia.org/wiki/Power_dressing"
+    },
+    {
+        "year": 1990,
+        "event": "Grunge Fashion",
+        "difficulty": 2,
+        "info": "Grunge style emerges with its anti-fashion statement.",
+        "url": "https://en.wikipedia.org/wiki/Grunge",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Nirvana_around_1992.jpg/150px-Nirvana_around_1992.jpg"
+    },
+    {
+        "year": 2000,
+        "event": "Y2K Fashion",
+        "difficulty": 2,
+        "info": "The turn of the millennium inspires futuristic fashion.",
+        "url": "https://en.wikipedia.org/wiki/2000s_in_fashion",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Women_on_holiday_-_Alvor_-_The_Algarve%2C_Portugal_%281469017357%29.jpg/150px-Women_on_holiday_-_Alvor_-_The_Algarve%2C_Portugal_%281469017357%29.jpg"
+    },
+    {
+        "year": 2010,
+        "event": "Athleisure Trend",
+        "difficulty": 2,
+        "info": "Athleisure blurs the line between sportswear and casualwear.",
+        "url": "https://en.wikipedia.org/wiki/Athleisure",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Athleisure-wear.jpg/150px-Athleisure-wear.jpg"
+    },
+    {
+        "year": 2015,
+        "event": "Gender-Neutral Fashion",
+        "difficulty": 3,
+        "info": "Fashion embraces inclusivity with gender-neutral styles.",
+        "url": "https://en.wikipedia.org/wiki/Gender_neutrality"
+    },
+    {
+        "year": -8000,
+        "event": "Weaving in Mesopotamia",
+        "difficulty": 2,
+        "info": "Weaving techniques develop in ancient Mesopotamia.",
+        "url": "https://en.wikipedia.org/wiki/History_of_weaving",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Warp_and_weft_2.jpg/150px-Warp_and_weft_2.jpg"
+    },
+    {
+        "year": -4000,
+        "event": "Leather Garments in Europe",
+        "difficulty": 2,
+        "info": "Leather garments are used in Europe during the Neolithic period.",
+        "url": "https://en.wikipedia.org/wiki/Leather",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Leathertools.jpg/150px-Leathertools.jpg"
+    },
+    {
+        "year": -3000,
+        "event": "Early Use of Cotton in India",
+        "difficulty": 3,
+        "info": "Cotton is cultivated and used for clothing in India.",
+        "url": "https://en.wikipedia.org/wiki/Cotton",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/CottonPlant.JPG/150px-CottonPlant.JPG"
+    },
+    {
+        "year": -2000,
+        "event": "First Known Pair of Pants",
+        "difficulty": 3,
+        "info": "The oldest known pair of pants is found in China.",
+        "url": "https://en.wikipedia.org/wiki/Tangzhuang",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Vladimir_Putin_at_APEC_Summit_in_China_19-21_October_2001-14.jpg/150px-Vladimir_Putin_at_APEC_Summit_in_China_19-21_October_2001-14.jpg"
+    },
+    {
+        "year": -1600,
+        "event": "Kanashi",
+        "difficulty": 2,
+        "info": "Kanashi, a traditional Japanese hairpin, becomes fashionable.",
+        "url": "https://en.wikipedia.org/wiki/Kanzashi",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Shochikubai_kanzashi.jpg/150px-Shochikubai_kanzashi.jpg"
+    },
+    {
+        "year": -1350,
+        "event": "Cotehardie",
+        "difficulty": 3,
+        "info": "The cotehardie, a fitted medieval dress, gains popularity.",
+        "url": "https://en.wikipedia.org/wiki/Cotehardie",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orazio_Gentileschi_-_Il_suonatore_di_liuto_%28National_Gallery_of_Art%29.jpg/150px-Orazio_Gentileschi_-_Il_suonatore_di_liuto_%28National_Gallery_of_Art%29.jpg"
+    },
+    {
+        "year": -1000,
+        "event": "Ancient Greek Fashion",
+        "difficulty": 3,
+        "info": "Ancient Greeks develop distinct clothing styles.",
+        "url": "https://en.wikipedia.org/wiki/Clothing_in_ancient_Greece",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Charioteer_of_Delphi_-_Delphi_Archaeological_Museum_by_Joy_of_Museums.jpg/150px-Charioteer_of_Delphi_-_Delphi_Archaeological_Museum_by_Joy_of_Museums.jpg"
+    },
+    {
+        "year": -700,
+        "event": "Toga in Ancient Rome",
+        "difficulty": 3,
+        "info": "The toga becomes a symbol of Roman citizenship.",
+        "url": "https://en.wikipedia.org/wiki/Toga",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Tiberius_Capri_Louvre_Ma1248.jpg/150px-Tiberius_Capri_Louvre_Ma1248.jpg"
+    },
+    {
+        "year": -500,
+        "event": "Hanfu in Ancient China",
+        "difficulty": 3,
+        "info": "Hanfu, traditional Chinese clothing, becomes popular.",
+        "url": "https://en.wikipedia.org/wiki/Hanfu",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/%E9%8E%AE%E6%9C%94%E5%B0%87%E8%BB%8D%E5%94%90%E5%85%AC%E5%83%8F%E8%BB%B8.jpg/150px-%E9%8E%AE%E6%9C%94%E5%B0%87%E8%BB%8D%E5%94%90%E5%85%AC%E5%83%8F%E8%BB%B8.jpg"
+    },
+    {
+        "year": -300,
+        "event": "Roman Tunic",
+        "difficulty": 2,
+        "info": "The Roman tunic becomes a staple garment.",
+        "url": "https://en.wikipedia.org/wiki/Tunic",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Coptic_-_Tunic_-_Walters_83484.jpg/150px-Coptic_-_Tunic_-_Walters_83484.jpg"
+    },
+    {
+        "year": 476,
+        "event": "Fall of the Western Roman Empire",
+        "difficulty": 3,
+        "info": "The fall of the Western Roman Empire impacts fashion.",
+        "url": "https://en.wikipedia.org/wiki/Fall_of_the_Western_Roman_Empire",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Roman_Republic_Empire_map.gif/150px-Roman_Republic_Empire_map.gif"
+    },
+    {
+        "year": 700,
+        "event": "Viking Clothing",
+        "difficulty": 3,
+        "info": "Vikings develop distinct clothing styles.",
+        "url": "https://en.wikipedia.org/wiki/Viking_Age_arms_and_armour",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Vikings_841_at_Dublin.jpg/150px-Vikings_841_at_Dublin.jpg"
+    },
+    {
+        "year": 794,
+        "event": "Kimonos in Japan",
+        "difficulty": 3,
+        "info": "Kimonos become the traditional Japanese garment.",
+        "url": "https://en.wikipedia.org/wiki/Kimono",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Young_Woman_at_Kennin-ji_Zen_Temple_-_Kyoto_-_Japan_-_01_%2847929418887%29.jpg/150px-Young_Woman_at_Kennin-ji_Zen_Temple_-_Kyoto_-_Japan_-_01_%2847929418887%29.jpg"
+    },
+    {
+        "year": 1066,
+        "event": "Norman Conquest Impact on Fashion",
+        "difficulty": 3,
+        "info": "The Norman Conquest influences fashion in England.",
+        "url": "https://en.wikipedia.org/wiki/Norman_Conquest",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Norman-conquest-1066.svg/150px-Norman-conquest-1066.svg.png"
+    },
+    {
+        "year": 1300,
+        "event": "Houppelande",
+        "difficulty": 3,
+        "info": "The houppelande becomes a popular medieval outer garment.",
+        "url": "https://en.wikipedia.org/wiki/Houppelande",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/15th_century_costume_-_the_Houppelande.jpg/150px-15th_century_costume_-_the_Houppelande.jpg"
+    },
+    {
+        "year": 1492,
+        "event": "Columbus's Voyage Impact on Fashion",
+        "difficulty": 3,
+        "info": "Columbus's voyage to the Americas influences fashion.",
+        "url": "https://en.wikipedia.org/wiki/Christopher_Columbus",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Portrait_of_a_Man%2C_Said_to_be_Christopher_Columbus.jpg/150px-Portrait_of_a_Man%2C_Said_to_be_Christopher_Columbus.jpg"
+    },
+    {
+        "year": 1500,
+        "event": "Fashion in the Renaissance",
+        "difficulty": 4,
+        "info": "The Renaissance introduces elaborate and luxurious fashion.",
+        "url": "https://en.wikipedia.org/wiki/1500%E2%80%931550_in_Western_European_fashion",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/More_famB_1280x-g0.jpg/150px-More_famB_1280x-g0.jpg"
+    },
+    {
+        "year": 1630,
+        "event": "Farthingale",
+        "difficulty": 3,
+        "info": "The farthingale shapes women's skirts during the Baroque era.",
+        "url": "https://en.wikipedia.org/wiki/Farthingale",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Pedro_Garc%C3%ADa_de_Benabarre_St_John_Retable_Detail.jpg/150px-Pedro_Garc%C3%ADa_de_Benabarre_St_John_Retable_Detail.jpg"
+    },
+    {
+        "year": 1666,
+        "event": "Great Fire of London Impact on Fashion",
+        "difficulty": 3,
+        "info": "The Great Fire of London impacts clothing styles.",
+        "url": "https://en.wikipedia.org/wiki/Great_Fire_of_London",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Great_Fire_London.jpg/150px-Great_Fire_London.jpg"
+    },
+    {
+        "year": 1789,
+        "event": "French Revolution and Fashion",
+        "difficulty": 4,
+        "info": "The French Revolution revolutionizes fashion.",
+        "url": "https://en.wikipedia.org/wiki/French_Revolution",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Anonymous_-_Prise_de_la_Bastille.jpg/150px-Anonymous_-_Prise_de_la_Bastille.jpg"
+    },
+    {
+        "year": 1804,
+        "event": "Empire Style",
+        "difficulty": 3,
+        "info": "The Empire style features high-waisted dresses.",
+        "url": "https://en.wikipedia.org/wiki/Empire_silhouette",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Merry-Joseph_Blondel_-_Felicite-Louise-Julie-Constance_de_Durfort.jpg/150px-Merry-Joseph_Blondel_-_Felicite-Louise-Julie-Constance_de_Durfort.jpg"
+    },
+    {
+        "year": 1837,
+        "event": "Victorian Fashion",
+        "difficulty": 4,
+        "info": "The Victorian era brings diverse fashion trends.",
+        "url": "https://en.wikipedia.org/wiki/Victorian_fashion",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Magasin_f%C3%B6r_konst%2C_nyheter_och_moder_1844%2C_illustration_nr_8.jpg/150px-Magasin_f%C3%B6r_konst%2C_nyheter_och_moder_1844%2C_illustration_nr_8.jpg"
+    },
+    {
+        "year": 1850,
+        "event": "Sewing Machine Invention",
+        "difficulty": 3,
+        "info": "The sewing machine revolutionizes garment making.",
+        "url": "https://en.wikipedia.org/wiki/Sewing_machine",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Sewingmachine1.jpg/150px-Sewingmachine1.jpg"
+    },
+    {
+        "year": 1860,
+        "event": "Cage Crinoline",
+        "difficulty": 3,
+        "info": "The cage crinoline replaces the traditional crinoline.",
+        "url": "https://en.wikipedia.org/wiki/Cage_crinoline",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Princess_Dagmar_of_Denmark_with_her_dog.jpg/150px-Princess_Dagmar_of_Denmark_with_her_dog.jpg"
+    },
+    {
+        "year": 1870,
+        "event": "Bicycle Fashion",
+        "difficulty": 2,
+        "info": "Bicycle fashion adapts to women's cycling needs.",
+        "url": "https://en.wikipedia.org/wiki/Bicycle",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Left_side_of_Flying_Pigeon.jpg/150px-Left_side_of_Flying_Pigeon.jpg"
+    },
+    {
+        "year": 1890,
+        "event": "Gibson Girl Look",
+        "difficulty": 2,
+        "info": "The Gibson Girl look symbolizes the modern, independent woman.",
+        "url": "https://en.wikipedia.org/wiki/Gibson_Girl",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Gibson_Girl_by_Charles_Dana_Gibson.jpg/150px-Gibson_Girl_by_Charles_Dana_Gibson.jpg"
+    },
+    {
+        "year": 1908,
+        "event": "Ford Model T",
+        "difficulty": 3,
+        "info": "The affordability of the Model T impacts fashion trends.",
+        "url": "https://en.wikipedia.org/wiki/Ford_Model_T",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/1925_Ford_Model_T_touring.jpg/150px-1925_Ford_Model_T_touring.jpg"
+    },
+    {
+        "year": 1910,
+        "event": "Hobble Skirt",
+        "difficulty": 3,
+        "info": "The hobble skirt restricts women's movement.",
+        "url": "https://en.wikipedia.org/wiki/Hobble_skirt",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/HobbleSkirtPostcard.jpg/150px-HobbleSkirtPostcard.jpg"
+    },
+    {
+        "year": 1920,
+        "event": "Flapper Era",
+        "difficulty": 4,
+        "info": "Flappers embrace shorter dresses and a liberated style.",
+        "url": "https://en.wikipedia.org/wiki/Flapper",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Louise_Brooks_ggbain_32453u_crop.jpg/150px-Louise_Brooks_ggbain_32453u_crop.jpg"
+    },
+    {
+        "year": 1930,
+        "event": "Golden Age of Hollywood",
+        "difficulty": 3,
+        "info": "Hollywood stars influence glamorous fashion trends.",
+        "url": "https://en.wikipedia.org/wiki/Hollywood_Golden_Age",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Clark_Gable_and_Vivien_Leigh_-_Wind.jpg/150px-Clark_Gable_and_Vivien_Leigh_-_Wind.jpg"
+    },
+    {
+        "year": 1940,
+        "event": "Utility Fashion",
+        "difficulty": 3,
+        "info": "WWII leads to practical utility clothing styles.",
+        "url": "https://en.wikipedia.org/wiki/1940s_in_fashion"
+    },
+    {
+        "year": 1950,
+        "event": "New Look by Dior",
+        "difficulty": 2,
+        "info": "Christian Dior introduces the elegant 'New Look' silhouette.",
+        "url": "https://en.wikipedia.org/wiki/1970s_in_fashion",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Lars_Jacob_et_al_%26_fashions_in_San_Diego_1971.jpg/150px-Lars_Jacob_et_al_%26_fashions_in_San_Diego_1971.jpg"
+    },
+    {
+        "year": 1960,
+        "event": "Swinging Sixties",
+        "difficulty": 3,
+        "info": "The '60s bring bold and mod fashion statements.",
+        "url": "https://en.wikipedia.org/wiki/Swinging_Sixties",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Londons_Carnaby_Street%2C_1966.jpg/150px-Londons_Carnaby_Street%2C_1966.jpg"
+    },
+    {
+        "year": 1970,
+        "event": "Hippie Style",
+        "difficulty": 3,
+        "info": "Hippie fashion embraces a bohemian and free-spirited look.",
+        "url": "https://en.wikipedia.org/wiki/Hippie",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Woodstock-kids.jpg/150px-Woodstock-kids.jpg"
+    },
+    {
+        "year": 1980,
+        "event": "Power Dressing",
+        "difficulty": 3,
+        "info": "Bold power dressing becomes popular in the workplace.",
+        "url": "https://en.wikipedia.org/wiki/Power_dressing"
+    },
+    {
+        "year": 1990,
+        "event": "Grunge Fashion",
+        "difficulty": 2,
+        "info": "Grunge style emerges with its anti-fashion statement.",
+        "url": "https://en.wikipedia.org/wiki/Grunge",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Nirvana_around_1992.jpg/150px-Nirvana_around_1992.jpg"
+    },
+    {
+        "year": 2000,
+        "event": "Y2K Fashion",
+        "difficulty": 2,
+        "info": "The turn of the millennium inspires futuristic fashion.",
+        "url": "https://en.wikipedia.org/wiki/2000s_in_fashion",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Women_on_holiday_-_Alvor_-_The_Algarve%2C_Portugal_%281469017357%29.jpg/150px-Women_on_holiday_-_Alvor_-_The_Algarve%2C_Portugal_%281469017357%29.jpg"
+    },
+    {
+        "year": 2010,
+        "event": "Athleisure Trend",
+        "difficulty": 2,
+        "info": "Athleisure blurs the line between sportswear and casualwear.",
+        "url": "https://en.wikipedia.org/wiki/Athleisure",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Athleisure-wear.jpg/150px-Athleisure-wear.jpg"
+    },
+    {
+        "year": 2015,
+        "event": "Gender-Neutral Fashion",
+        "difficulty": 3,
+        "info": "Fashion embraces inclusivity with gender-neutral styles.",
+        "url": "https://en.wikipedia.org/wiki/Gender_neutrality"
+    }
+]
