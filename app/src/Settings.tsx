@@ -38,6 +38,10 @@ export default function FormDialog() {
     setSettings({...settings, mode: event.target.value as string});
   };
 
+  const handlePromptChange = (event: any) => {
+    setSettings({...settings, prompt: event.target.value as string});
+  };
+
   return (
     <>
       <IconButton onClick={handleClickOpen} >
@@ -77,6 +81,23 @@ export default function FormDialog() {
               </MenuItem>
               <MenuItem value={"three-lives"} key={1}>
                 Survival (three lives)
+              </MenuItem>
+            </Select>
+        </DialogContent>
+        <DialogContent>
+          <InputLabel id="select-prompt-label">Prompt</InputLabel>
+            <Select
+            labelId="select-prompt-label"
+            id="select-prompt"
+            value={settings.prompt}
+            label="Prompt"
+            onChange={handlePromptChange}
+            >
+              <MenuItem value={"text"} key={1}>
+                Text
+              </MenuItem>
+              <MenuItem value={"image"} key={0}>
+                Image (if available)
               </MenuItem>
             </Select>
         </DialogContent>

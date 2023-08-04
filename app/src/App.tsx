@@ -11,6 +11,7 @@ import StatsDisplay from './StatsDisplay';
 import Settings from './Settings';
 import { useAppState, useDispatch } from './AppState';
 import { GameSummary } from './GameSummary';
+import Prompt from './Prompt';
 
 
 function Copyright() {
@@ -72,9 +73,7 @@ export default function App() {
         {state.gameOver ?
           <GameSummary /> :
           <>
-            <Stack direction="row" justifyContent="space-between">
-              <LabelTextComponent label="Insert" text={newEvent.event}/>
-            </Stack>
+            <Prompt newEvent={newEvent} />
             <Paper
               style={
                 {maxHeight: 600, overflow: 'auto', backgroundColor}

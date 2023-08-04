@@ -78,6 +78,7 @@ const initialSettings = {
   blinkTimeout: 150,
   deck: decks[0]["value"],
   mode: 'three-lives',
+  prompt: 'image',
 };
 
 const initialState = {
