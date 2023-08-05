@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/timeliner/static/js/main.881bacce.js",
+    "main.js": "/timeliner/static/js/main.b6c6aebb.js",
     "index.html": "/timeliner/index.html",
-    "main.881bacce.js.map": "/timeliner/static/js/main.881bacce.js.map"
+    "main.b6c6aebb.js.map": "/timeliner/static/js/main.b6c6aebb.js.map"
   },
   "entrypoints": [
-    "static/js/main.881bacce.js"
+    "static/js/main.b6c6aebb.js"
   ]
 }
