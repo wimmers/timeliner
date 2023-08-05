@@ -3,7 +3,8 @@ import events1 from './events1.json';
 import inventions from './inventions.json';
 import climate from './climate.json';
 import fashion from './fashion.json';
-import veganism from './veganism.json';
+// import veganism from './veganism.json';
+import architecture from './architecture.json';
 
 export type event = {
   year: string | number,
@@ -16,17 +17,15 @@ export type event = {
   misplaced?: boolean // only for app state
 };
 
-const fashionConverted = fashion.map(
-  event => ({...event, timestamp: event.year}));
-
-const veganismConverted = veganism.map(
-  event => ({...event, timestamp: event.year}));
+const convert = (deck: event[]) =>
+  deck.map(event => ({...event, timestamp: event.year}));
 
 export const decks = [
-  {"name": "Fashion", "value": fashionConverted as event[]},
+  {"name": "Fashion", "value": convert(fashion as event[])},
   {"name": "Easy 1", "value": events0 as event[]},
   {"name": "Easy 2", "value": events1 as event[]},
   {"name": "Inventions", "value": inventions as event[]},
   {"name": "Climate Change", "value": climate as event[]},
-  {"name": "Veganism", "value": veganismConverted as event[]},
+  // {"name": "Veganism", "value": convert(veganism as event[])},
+  {"name": "Architecture", "value": convert(architecture as event[])},
 ];

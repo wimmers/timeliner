@@ -1,0 +1,186 @@
+[
+    {
+        "year": -3200,
+        "event": "Pyramids of Giza",
+        "difficulty": 4,
+        "info": "The Great Pyramid is built, the oldest and largest pyramid in Giza, Egypt.",
+        "url": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/150px-Kheops-Pyramid.jpg"
+    },
+    {
+        "year": -2100,
+        "event": "Stonehenge",
+        "difficulty": 4,
+        "info": "Construction of Stonehenge, a prehistoric monument in England.",
+        "url": "https://en.wikipedia.org/wiki/Stonehenge",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Stonehenge2007_07_30.jpg/150px-Stonehenge2007_07_30.jpg"
+    },
+    {
+        "year": -776,
+        "event": "Ancient Greek Architecture",
+        "difficulty": 3,
+        "info": "The first Olympic Games held in ancient Greece.",
+        "url": "https://en.wikipedia.org/wiki/Ancient_Greek_architecture",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Parthenon_%2830276156187%29.jpg/150px-Parthenon_%2830276156187%29.jpg"
+    },
+    {
+        "year": -753,
+        "event": "Founding of Rome",
+        "difficulty": 3,
+        "info": "Rome's architectural history begins with its founding.",
+        "url": "https://en.wikipedia.org/wiki/Roman_architecture",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/150px-Colosseo_2020.jpg"
+    },
+    {
+        "year": -260,
+        "event": "Great Wall of China",
+        "difficulty": 4,
+        "info": "Construction of the Great Wall to protect China from invasions.",
+        "url": "https://en.wikipedia.org/wiki/Great_Wall_of_China",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/The_Great_Wall_of_China_at_Jinshanling-edit.jpg/150px-The_Great_Wall_of_China_at_Jinshanling-edit.jpg"
+    },
+    {
+        "year": 526,
+        "event": "Hagia Sophia",
+        "difficulty": 4,
+        "info": "The Hagia Sophia in Istanbul, Turkey, is completed as a cathedral.",
+        "url": "https://en.wikipedia.org/wiki/Hagia_Sophia",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Aya_Sophia_%287144824757%29.jpg/150px-Aya_Sophia_%287144824757%29.jpg"
+    },
+    {
+        "year": 1150,
+        "event": "Gothic Architecture",
+        "difficulty": 3,
+        "info": "Gothic cathedrals with pointed arches and flying buttresses emerge.",
+        "url": "https://en.wikipedia.org/wiki/Gothic_architecture",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wells_Cathedral_West_Front_Exterior%2C_UK_-_Diliff.jpg/150px-Wells_Cathedral_West_Front_Exterior%2C_UK_-_Diliff.jpg"
+    },
+    {
+        "year": 1220,
+        "event": "Construction of Notre-Dame",
+        "difficulty": 4,
+        "info": "Construction of Notre-Dame Cathedral in Paris, France, begins.",
+        "url": "https://en.wikipedia.org/wiki/Notre-Dame_de_Paris",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Notre-Dame_de_Paris%2C_4_October_2017.jpg/150px-Notre-Dame_de_Paris%2C_4_October_2017.jpg"
+    },
+    {
+        "year": 1480,
+        "event": "Renaissance Architecture",
+        "difficulty": 4,
+        "info": "Renaissance architecture brings a revival of classical forms.",
+        "url": "https://en.wikipedia.org/wiki/Renaissance_architecture",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Tempietto%2C_Haupteingang.jpg/150px-Tempietto%2C_Haupteingang.jpg"
+    },
+    {
+        "year": 1526,
+        "event": "Taj Mahal",
+        "difficulty": 4,
+        "info": "Construction of the iconic Taj Mahal in Agra, India, begins.",
+        "url": "https://en.wikipedia.org/wiki/Taj_Mahal",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Taj_Mahal%2C_Agra%2C_India_edit3.jpg/150px-Taj_Mahal%2C_Agra%2C_India_edit3.jpg"
+    },
+    {
+        "year": 1600,
+        "event": "Baroque Architecture",
+        "difficulty": 4,
+        "info": "Baroque style characterized by grandeur and ornate decoration.",
+        "url": "https://en.wikipedia.org/wiki/Baroque_architecture",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Lazio_Roma_SIgnazio_tango7174.jpg/150px-Lazio_Roma_SIgnazio_tango7174.jpg"
+    },
+    {
+        "year": 1700,
+        "event": "Georgian Architecture",
+        "difficulty": 3,
+        "info": "Georgian architecture popular in England and America.",
+        "url": "https://en.wikipedia.org/wiki/Georgian_architecture",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/57_The_Close%2C_Salisbury.jpg/150px-57_The_Close%2C_Salisbury.jpg"
+    },
+    {
+        "year": 1793,
+        "event": "Louvre Museum",
+        "difficulty": 3,
+        "info": "The Louvre Museum opens in Paris, France, in the former royal palace.",
+        "url": "https://en.wikipedia.org/wiki/Louvre",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Louvre_Museum_Wikimedia_Commons.jpg/150px-Louvre_Museum_Wikimedia_Commons.jpg"
+    },
+    {
+        "year": 1859,
+        "event": "Eiffel Tower",
+        "difficulty": 4,
+        "info": "Construction of the iconic Eiffel Tower in Paris, France, begins.",
+        "url": "https://en.wikipedia.org/wiki/Eiffel_Tower",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg/150px-Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg"
+    },
+    {
+        "year": 1884,
+        "event": "Home Insurance Building",
+        "difficulty": 3,
+        "info": "The first skyscraper, Home Insurance Building, is constructed in Chicago.",
+        "url": "https://en.wikipedia.org/wiki/Home_Insurance_Building",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Home_Insurance_Building.JPG/150px-Home_Insurance_Building.JPG"
+    },
+    {
+        "year": 1897,
+        "event": "Flatiron Building",
+        "difficulty": 3,
+        "info": "The Flatiron Building is completed in New York City.",
+        "url": "https://en.wikipedia.org/wiki/Flatiron_Building",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Edificio_Fuller_%28Flatiron%29_en_2010_desde_el_Empire_State_crop_boxin.jpg/150px-Edificio_Fuller_%28Flatiron%29_en_2010_desde_el_Empire_State_crop_boxin.jpg"
+    },
+    {
+        "year": 1920,
+        "event": "Art Deco",
+        "difficulty": 3,
+        "info": "Art Deco architecture becomes popular in the 1920s and 1930s.",
+        "url": "https://en.wikipedia.org/wiki/Art_Deco",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Chrysler_Building_1_%284684845155%29.jpg/150px-Chrysler_Building_1_%284684845155%29.jpg"
+    },
+    {
+        "year": 1930,
+        "event": "Fallingwater",
+        "difficulty": 4,
+        "info": "Frank Lloyd Wright's Fallingwater house completed in Pennsylvania.",
+        "url": "https://en.wikipedia.org/wiki/Fallingwater",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Fallingwater3.jpg/150px-Fallingwater3.jpg"
+    },
+    {
+        "year": 1958,
+        "event": "Sydney Opera House",
+        "difficulty": 4,
+        "info": "Construction of the iconic Sydney Opera House begins.",
+        "url": "https://en.wikipedia.org/wiki/Sydney_Opera_House",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Sydney_Australia._%2821339175489%29.jpg/150px-Sydney_Australia._%2821339175489%29.jpg"
+    },
+    {
+        "year": 1973,
+        "event": "Sears Tower",
+        "difficulty": 3,
+        "info": "Sears Tower (now Willis Tower) becomes the tallest building in the world.",
+        "url": "https://en.wikipedia.org/wiki/Willis_Tower",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Willis_Tower_From_Lake.jpg/150px-Willis_Tower_From_Lake.jpg"
+    },
+    {
+        "year": 1997,
+        "event": "Guggenheim Museum Bilbao",
+        "difficulty": 3,
+        "info": "The Guggenheim Museum Bilbao opens, designed by Frank Gehry.",
+        "url": "https://en.wikipedia.org/wiki/Guggenheim_Museum_Bilbao",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Museo_Guggenheim%2C_Bilbao_%2831273245344%29.jpg/150px-Museo_Guggenheim%2C_Bilbao_%2831273245344%29.jpg"
+    },
+    {
+        "year": 2004,
+        "event": "Burj Khalifa",
+        "difficulty": 4,
+        "info": "The Burj Khalifa in Dubai becomes the tallest building in the world.",
+        "url": "https://en.wikipedia.org/wiki/Burj_Khalifa",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/9/93/Burj_Khalifa.jpg/150px-Burj_Khalifa.jpg"
+    },
+    {
+        "year": 2016,
+        "event": "One World Trade Center",
+        "difficulty": 3,
+        "info": "One World Trade Center opens in New York City.",
+        "url": "https://en.wikipedia.org/wiki/One_World_Trade_Center",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/One_WTC_logo.svg/150px-One_WTC_logo.svg.png"
+    }
+]
