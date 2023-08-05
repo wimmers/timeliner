@@ -99,6 +99,9 @@ export default function FormDialog() {
               <MenuItem value={"image"} key={0}>
                 Image (if available)
               </MenuItem>
+              <MenuItem value={"both"} key={0}>
+                Text and Image
+              </MenuItem>
             </Select>
         </DialogContent>
         <DialogActions>
