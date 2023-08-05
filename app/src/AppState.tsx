@@ -13,6 +13,26 @@ const pickNextEvent = (deck: event[], events: event[]): event => {
   return event;
 };
 
+export function isCorrectlyPlaced
+  (events: event[], newEvent: event, index: number): boolean
+{
+  const ts = newEvent.timestamp;
+  const before = events[index]?.timestamp;
+  const after = events[index+1]?.timestamp;
+  return ((!before || before <= ts) && (!after || ts <= after));
+};
+
+export function findPlacementIndex(state: any): number {
+  const events = state.events;
+  const newEvent = state.newEvent;
+  for (let i = -1; i < events.length; i++) {
+    if (isCorrectlyPlaced(events, newEvent, i)) {
+      return i;
+    }
+  }
+  return events.length;
+}
+
 function stateReducer(state: any, action: any) {
   const {events, newEvent, settings} = state;
   switch (action.type) {
@@ -39,7 +59,8 @@ function stateReducer(state: any, action: any) {
     }
     case 'insert': {
       const index = action.index;;
-      events.splice(index + 1, 0, newEvent);
+      const event = action.event || newEvent;
+      events.splice(index + 1, 0, event);
       return ({...state,
         events: [...events],
         newEvent: pickNextEvent(settings.deck, events),

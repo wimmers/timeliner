@@ -12,6 +12,7 @@ export type event = {
   url?: string,
   info?: string,
   thumbnailUrl?: string,
+  misplaced?: boolean // only for app state
 };
 
 const fashionConverted = fashion.map(

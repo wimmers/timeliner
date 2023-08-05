@@ -16,9 +16,11 @@ import Typography from '@mui/material/Typography';
 import { event } from './Decks';
 
 function Item(
-  {event: { year, event, info, url, thumbnailUrl }, onClick}: {event: event, onClick: () => void}
+  {event: { year, event, info, url, thumbnailUrl, misplaced }, onClick}:
+  {event: event, onClick: () => void}
 ) {
   const isBig = useMediaQuery((theme: any) => theme.breakpoints.up('sm'));
+  const headlineColor = misplaced ? 'error' : 'secondary';
   return <TimelineItem key={event}>
     <TimelineOppositeContent pl={{xs: 0, sm: 2}}>
       <Typography color="textSecondary">
@@ -52,12 +54,12 @@ function Item(
     <TimelineContent pr={{xs: 0, sm: 2}} sx={{ py: 0.5 }}>
       {url ?
         <Link
-          variant='subtitle1' href={url} underline='hover' color='secondary'
+          variant='subtitle1' href={url} underline='hover' color={headlineColor}
           target='_blank' rel='noreferrer'
         >
           {event}
         </Link> :
-        <Typography variant='subtitle1' color='secondary'>
+        <Typography variant='subtitle1' color={headlineColor}>
           {event}
         </Typography>
       }

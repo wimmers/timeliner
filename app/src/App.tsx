@@ -6,10 +6,10 @@ import Link from '@mui/material/Link';
 import Paper from "@mui/material/Paper";
 import Stack from "@mui/material/Stack";
 import Timeline from './Timeline';
-import LabelTextComponent from './LabelTextComponent';
 import StatsDisplay from './StatsDisplay';
 import Settings from './Settings';
-import { useAppState, useDispatch } from './AppState';
+import { useAppState, useDispatch,
+  findPlacementIndex, isCorrectlyPlaced } from './AppState';
 import { GameSummary } from './GameSummary';
 import Prompt from './Prompt';
 
@@ -38,13 +38,13 @@ export default function App() {
   const onInsert = (index: number) => {
     const events = state.events;
     const newEvent = state.newEvent;
-    const ts = newEvent.timestamp;
-    const before = events[index]?.timestamp;
-    const after = events[index+1]?.timestamp;
-    if (!(before && before > ts) && !(after && after < ts)) {
+    if (isCorrectlyPlaced(events, newEvent, index)) {
       dispatch({type: 'insert', index});
       setTimeout(() => dispatch({type: "resetColor"}), settings.blinkTimeout);
     } else {
+      const placementIndex = findPlacementIndex(state);
+      dispatch({type: 'insert', index: placementIndex,
+        event: {...newEvent, misplaced: true}});
       dispatch({type: 'wrong', index});
       setTimeout(() => dispatch({type: "resetColor"}), settings.blinkTimeout);
     }
