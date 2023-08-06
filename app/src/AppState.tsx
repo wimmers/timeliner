@@ -1,17 +1,22 @@
 import React, { createContext, useContext, useReducer } from 'react';
 import {event, decks} from './Decks';
 
-const pickNextEvent = (deck: event[], events: event[]): event => {
-  let event = events[0];
-  for (let i = 0; i < 1000; i++) {
-    event = deck[Math.floor(Math.random()*deck.length)];
-    if (!(events.includes(event))) {
-      return event
-    }
+const pickNextEvent = (state: any) => {
+  const unusedIndices = state.unusedIndices as number[];
+  if (unusedIndices.length === 0) {
+    return {...state,
+      gameOver: true,
+    };
   }
-  console.log("Lottery ran out of tries!");
-  return event;
-};
+  const i = Math.floor(Math.random()*unusedIndices.length);
+  const index = unusedIndices[i];
+  const event = state.settings.deck[index];
+  unusedIndices.splice(i, 1);
+  return ({
+    ...state,
+    newEvent: event,
+  });
+}
 
 export function isCorrectlyPlaced
   (events: event[], newEvent: event, index: number): boolean
@@ -37,12 +42,15 @@ function stateReducer(state: any, action: any) {
   const {events, newEvent, settings} = state;
   switch (action.type) {
     case 'changeDeck': {
-      const newDeck = action.deck;
-      const events = [pickNextEvent(newDeck, [])];
-      return {...state,
+      const newDeck = action.deck as event[];
+      const state1 = {...state,
         settings: {...settings, deck: newDeck},
-        events: events,
-        newEvent: pickNextEvent(newDeck, events)
+        unusedIndices: newDeck.map((_, index) => index),
+      }
+      const state2 = pickNextEvent(state1);
+      const firstEvent = state2.newEvent;
+      return {...pickNextEvent(state2),
+        events: [firstEvent],
       }
     }
     case 'resetStats': {
@@ -61,9 +69,8 @@ function stateReducer(state: any, action: any) {
       const index = action.index;;
       const event = action.event || newEvent;
       events.splice(index + 1, 0, event);
-      return ({...state,
+      return ({...pickNextEvent(state),
         events: [...events],
-        newEvent: pickNextEvent(settings.deck, events),
         backgroundColor: "green",
         right: state.right + 1,
         streak: state.streak + 1,

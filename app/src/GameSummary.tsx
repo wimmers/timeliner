@@ -11,14 +11,14 @@ export function GameSummary() {
   const state: any = useAppState();
   const settings: any = useAppSettings();
 
-  const handleClickOpen = () => {
+  const handleClickNewGame = () => {
     dispatch({type: 'resetStats'});
     dispatch({type: 'changeDeck', deck: settings.deck});
   }
 
   return (<Box pl={1} mb={1}>
     <Typography variant="h5" color="textSecondary">
-      Game Over!
+      {state.unusedIndices.length ? "Game over!" : "You won the game!"}
     </Typography>
     <Stack direction='row' spacing={2} justifyContent='space-evenly' maxWidth={300}>
       <Stack>
@@ -33,7 +33,7 @@ export function GameSummary() {
           label={"Previous best"} text={state.streakHighscore} />
       </Stack>
     </Stack>
-    <Button variant="outlined" onClick={handleClickOpen} sx={{mt: 1}}>
+    <Button variant="outlined" onClick={handleClickNewGame} sx={{mt: 1}}>
       New Game!
     </Button>
   </Box>)
