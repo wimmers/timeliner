@@ -157,6 +157,7 @@ export function useUpdateSettings() {
   return (newSettings: any) => {
     dispatch({type: 'updateSettings', settings: newSettings});
     if (newSettings.deck !== state.settings.deck) {
+      dispatch({type: 'resetStats'});
       dispatch({type: 'changeDeck', deck: newSettings.deck});
     }
   }
