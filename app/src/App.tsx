@@ -70,19 +70,18 @@ export default function App() {
           </Stack>
           <StatsDisplay wrong={wrong} right={right} streak={streak} />
         </Stack>
-        {state.gameOver ?
-          <GameSummary /> :
-          <>
-            <Prompt newEvent={newEvent} />
-            <Paper
-              style={
-                {maxHeight: 600, overflow: 'auto', backgroundColor}
-              }
-            >
-              <Timeline events={events} onInsert={onInsert} />
-            </Paper>
-          </>
-        }
+        <>
+          {state.gameOver ? <GameSummary /> : <Prompt newEvent={newEvent} /> }
+          <Paper
+            style={
+              {maxHeight: 600, overflow: 'auto', backgroundColor}
+            }
+          >
+            <Timeline events={events}
+              onInsert={state.gameOver ? undefined : onInsert}
+            />
+          </Paper>
+        </>
         <Copyright/>
       </Box>
     </Container>

@@ -17,7 +17,7 @@ import { event } from './Decks';
 
 function Item(
   {event: { year, event, info, url, thumbnailUrl, misplaced }, onClick}:
-  {event: event, onClick: () => void}
+  {event: event, onClick?: () => void}
 ) {
   const isBig = useMediaQuery((theme: any) => theme.breakpoints.up('sm'));
   const headlineColor = misplaced ? 'error' : 'secondary';
@@ -39,7 +39,7 @@ function Item(
     <TimelineSeparator>
       <TimelineDot />
       <TimelineConnector
-        sx={isBig ?
+        sx={isBig && onClick ?
           {
             '&:hover': {
               width: 5,
@@ -48,7 +48,7 @@ function Item(
           : {}
         }
       >
-        <Button onClick={onClick} sx={{ left: -30, height: 1 }} />
+        {onClick && <Button onClick={onClick} sx={{ left: -30, height: 1 }} />}
       </TimelineConnector>
     </TimelineSeparator>
     <TimelineContent pr={{xs: 0, sm: 2}} sx={{ py: 0.5 }}>
@@ -74,7 +74,7 @@ export default function GameTimeline({ events, onInsert }: any) {
   const children = events.map((item: event, index: number) =>
     <Item
       event={item}
-      onClick={() => onInsert(index)}
+      onClick={onInsert && (() => onInsert(index))}
     />
   );
   const timelineStyle: any = {
@@ -93,7 +93,7 @@ export default function GameTimeline({ events, onInsert }: any) {
       {
         <Item
           event={{ year: "", event: "", timestamp: Number.NEGATIVE_INFINITY }}
-          onClick={() => onInsert(-1)}
+          onClick={onInsert && (() => onInsert(-1))}
         />
       }
       {children}
