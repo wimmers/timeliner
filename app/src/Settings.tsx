@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Button from '@mui/material/Button';
 import InputLabel from '@mui/material/InputLabel';
-import Select from '@mui/material/Select';
+import Select, { SelectChangeEvent } from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
@@ -14,7 +14,7 @@ import { decks } from './Decks';
 
 export default function FormDialog() {
   const [open, setOpen] = React.useState(false);
-  const [settings, setSettings]: any = React.useState(useAppSettings());
+  const [settings, setSettings] = React.useState(useAppSettings());
   const updateSettings = useUpdateSettings();
 
   const handleClickOpen = () => {
@@ -31,15 +31,15 @@ export default function FormDialog() {
   };
 
   const handleDeckChange = (event: any) => {
-    setSettings({...settings, deck: event.target.value as string});
+    setSettings({...settings, deck: event.target.value});
   };
 
   const handleModeChange = (event: any) => {
-    setSettings({...settings, mode: event.target.value as string});
+    setSettings({...settings, mode: event.target.value});
   };
 
   const handlePromptChange = (event: any) => {
-    setSettings({...settings, prompt: event.target.value as string});
+    setSettings({...settings, prompt: event.target.value});
   };
 
   return (
@@ -52,19 +52,19 @@ export default function FormDialog() {
         <DialogContent>
           <InputLabel id="select-deck-label">Deck</InputLabel>
             <Select
-            labelId="select-deck-label"
-            id="select-deck"
-            value={settings.deck}
-            label="Deck"
-            onChange={handleDeckChange}
+              labelId="select-deck-label"
+              id="select-deck"
+              value={settings.deck}
+              label="Deck"
+              onChange={handleDeckChange}
             >
-            {
-                decks.map((deck: any, index: number) =>
-                    <MenuItem value={deck["value"]} key={index}>
-                      {deck["name"]}
-                    </MenuItem>
+              {
+                decks.map(({name, value}, index: number) =>
+                  <MenuItem value={value as unknown as string} key={index}>
+                    {name}
+                  </MenuItem>
                 )
-            }
+              }
             </Select>
         </DialogContent>
         <DialogContent>

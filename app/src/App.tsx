@@ -12,6 +12,7 @@ import { useAppState, useDispatch,
   findPlacementIndex, isCorrectlyPlaced } from './AppState';
 import { GameSummary } from './GameSummary';
 import Prompt from './Prompt';
+import {event} from './Decks';
 
 
 function Copyright() {
@@ -31,13 +32,14 @@ function Copyright() {
 
 
 export default function App() {
-  const dispatch: any = useDispatch();
-  const state: any = useAppState();
+  const dispatch = useDispatch();
+  const state = useAppState();
   const settings = state.settings;
 
   const onInsert = (index: number) => {
     const events = state.events;
-    const newEvent = state.newEvent;
+    const newEvent = state.newEvent as event;
+
     if (isCorrectlyPlaced(events, newEvent, index)) {
       dispatch({type: 'insert', index});
       setTimeout(() => dispatch({type: "resetColor"}), settings.blinkTimeout);
@@ -45,7 +47,7 @@ export default function App() {
       const placementIndex = findPlacementIndex(state);
       dispatch({type: 'insert', index: placementIndex,
         event: {...newEvent, misplaced: true}});
-      dispatch({type: 'wrong', index});
+      dispatch({type: 'wrong'});
       setTimeout(() => dispatch({type: "resetColor"}), settings.blinkTimeout);
     }
   };

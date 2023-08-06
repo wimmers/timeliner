@@ -6,7 +6,7 @@ import { useAppSettings } from './AppState';
 export default function StatsDisplay(
   { wrong, right, streak }: { [_: string]: number }
 ) {
-  const settings: any = useAppSettings();
+  const settings = useAppSettings();
 
   let wrongDisplay; // Display number of errors or remaining lives (hearts)
   if (settings.mode === 'forever') {

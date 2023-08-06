@@ -7,9 +7,9 @@ import LabelTextComponent from "./LabelTextComponent";
 import Stack from "@mui/material/Stack";
 
 export function GameSummary() {
-  const dispatch: any = useDispatch();
-  const state: any = useAppState();
-  const settings: any = useAppSettings();
+  const dispatch = useDispatch();
+  const state = useAppState();
+  const settings = useAppSettings();
 
   const handleClickNewGame = () => {
     dispatch({type: 'resetStats'});
@@ -24,13 +24,13 @@ export function GameSummary() {
       <Stack>
         <LabelTextComponent label={"Correct"} text={state.right} />
         <LabelTextComponent
-          label={"Longest streak"} text={state.longestStreak} />
+          label={"Longest streak"} text={state.longestStreak || ""} />
       </Stack>
       <Stack>
       <LabelTextComponent
-          label={"Previous best"} text={state.rightHighscore} />
+          label={"Previous best"} text={state.rightHighscore || ""} />
         <LabelTextComponent
-          label={"Previous best"} text={state.streakHighscore} />
+          label={"Previous best"} text={state.streakHighscore || ""} />
       </Stack>
     </Stack>
     <Button variant="outlined" onClick={handleClickNewGame} sx={{mt: 1}}>

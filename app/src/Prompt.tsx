@@ -6,8 +6,11 @@ import { useAppSettings } from "./AppState";
 import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 
-export default function Prompt({newEvent}: {newEvent: event}) {
-  const settings: any = useAppSettings();
+export default function Prompt({newEvent}: {newEvent: event | undefined}) {
+  if (!newEvent) {
+    return <></>;
+  }
+  const settings = useAppSettings();
   const labelComponent =
     <LabelTextComponent label="Insert" text={newEvent.event} />;
   const imgComponent =
