@@ -11,7 +11,6 @@ import DialogContentText from '@mui/material/DialogContentText';
 import IconButton from '@mui/material/IconButton';
 import InfoIcon from '@mui/icons-material/InfoRounded';
 import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
 import { useAppSettings, useDispatch, useUpdateSettings } from './AppState';
 import { decks } from './Decks';
 import Stack from '@mui/material/Stack';
@@ -43,17 +42,17 @@ export default function GameInfo({isOpen}: {isOpen?: boolean}) {
       <Dialog open={open} onClose={handleClose}>
         <DialogTitle>Welcome!</DialogTitle>
         <DialogContent>
-        <Stack spacing={1}>
-        <DialogContentText>
-          Insert the event at the top in the timeline below.
-        </DialogContentText>
-        <DialogContentText>
-          Click any of the bars to insert.
-        </DialogContentText>
-        <DialogContentText>
-          Finish the timeline to win the game!
-        </DialogContentText>
-        </Stack>
+          <Stack spacing={1}>
+            <DialogContentText>
+              Insert the event at the top in the timeline below.
+            </DialogContentText>
+            <DialogContentText>
+              Click any of the bars to insert.
+            </DialogContentText>
+            <DialogContentText>
+              Finish the timeline to win the game!
+            </DialogContentText>
+          </Stack>
         </DialogContent>
         <DialogContent>
           <InputLabel id="select-deck-label">Deck</InputLabel>
