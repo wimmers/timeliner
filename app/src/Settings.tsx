@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, {useState} from 'react';
 import Button from '@mui/material/Button';
 import InputLabel from '@mui/material/InputLabel';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
@@ -9,13 +9,15 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
 import IconButton from '@mui/material/IconButton';
 import SettingsIcon from '@mui/icons-material/SettingsRounded';
+import FileDialog from './FileDialog';
 import { useAppSettings, useUpdateSettings } from './AppState';
-import { decks } from './Decks';
+import { decks, convert } from './Decks';
 import Box from '@mui/material/Box';
 
 export default function FormDialog() {
-  const [open, setOpen] = React.useState(false);
-  const [settings, setSettings] = React.useState(useAppSettings());
+  const [open, setOpen] = useState(false);
+  const [openFileDialog, setOpenFileDialog] = useState(false);
+  const [settings, setSettings] = useState(useAppSettings());
   const updateSettings = useUpdateSettings();
 
   const handleClickOpen = () => {
@@ -43,6 +45,12 @@ export default function FormDialog() {
     setSettings({...settings, prompt: event.target.value});
   };
 
+  const handleFileLoaded = ({data, name}: any) => {
+    data = convert(data);
+    decks.push({name, value: data});
+    setSettings({...settings, deck: data});
+  };
+
   return (
     <Box>
       <IconButton onClick={handleClickOpen} >
@@ -67,6 +75,15 @@ export default function FormDialog() {
                 )
               }
             </Select>
+            <Box width={8} height={8}></Box>
+            <Button variant="outlined" onClick={() => setOpenFileDialog(true)}>
+              Load Deck From File
+            </Button>
+            <FileDialog
+              open={openFileDialog}
+              onClose={() => setOpenFileDialog(false)}
+              onFileLoaded={handleFileLoaded}
+            />
         </DialogContent>
         <DialogContent>
           <InputLabel id="select-mode-label">Mode</InputLabel>

@@ -17,8 +17,9 @@ export type event = {
   misplaced?: boolean // only for app state
 };
 
-const convert = (deck: event[]): event[] =>
-  deck.map(event => ({...event, timestamp: event.year as number}));
+export const convert = (deck: event[]): event[] =>
+  deck.map(event =>
+    event.timestamp ? event : {...event, timestamp: event.year as number});
 
 export const decks = [
   {"name": "Fashion", "value": convert(fashion as event[])},

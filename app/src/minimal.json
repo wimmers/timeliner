@@ -1,0 +1,13 @@
+[
+    {
+        "year": -753,
+        "event": "Founding of Rome",
+        "info": "According to legend, Rome is founded by Romulus and Remus.",
+        "url": "https://en.wikipedia.org/wiki/Founding_of_Rome",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Kapitolinische_W%C3%B6lfin_Museum_Capitolini.jpg/150px-Kapitolinische_W%C3%B6lfin_Museum_Capitolini.jpg"
+    },
+    {
+        "year": 2020,
+        "event": "Corona Pandemic"
+    }
+]
