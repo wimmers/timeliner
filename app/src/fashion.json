@@ -43,7 +43,8 @@
         "event": "Fashion in the Mongol Empire",
         "difficulty": 3,
         "info": "The Mongol Empire influences fashion across Asia.",
-        "url": "https://en.wikipedia.org/wiki/History_of_Thai_clothing"
+        "url": "https://en.wikipedia.org/wiki/History_of_clothing_in_the_Indian_subcontinent",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Gandhara_Buddha_%28tnm%29.jpeg/150px-Gandhara_Buddha_%28tnm%29.jpeg"
     },
     {
         "year": -1400,
@@ -90,8 +91,8 @@
         "event": "Rococo Fashion",
         "difficulty": 4,
         "info": "Rococo fashion dominates the European court.",
-        "url": "https://en.wikipedia.org/wiki/Fashion_in_the_period_1750%E2%80%931795",
-        "status": "Could not resolve URL."
+        "url": "https://en.wikipedia.org/wiki/Rococo",
+        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Ca%27_rezzonico%2C_salone_da_ballo%2C_quadrature_di_pietro_visconti_e_affreschi_di_g.b._crosato_%28caduta_di_febo_e_4_continenti%29%2C_1753%2C_02.jpg/150px-Ca%27_rezzonico%2C_salone_da_ballo%2C_quadrature_di_pietro_visconti_e_affreschi_di_g.b._crosato_%28caduta_di_febo_e_4_continenti%29%2C_1753%2C_02.jpg"
     },
     {
         "year": 1800,
@@ -132,14 +133,6 @@
         "info": "The sack suit becomes popular men's attire.",
         "url": "https://en.wikipedia.org/wiki/Sack_suit",
         "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Paul_Newman_1954.JPG/150px-Paul_Newman_1954.JPG"
-    },
-    {
-        "year": 1900,
-        "event": "Gibson Girl Style",
-        "difficulty": 2,
-        "info": "The Gibson Girl look symbolizes the independent woman.",
-        "url": "https://en.wikipedia.org/wiki/Gibson_Girl",
-        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Gibson_Girl_by_Charles_Dana_Gibson.jpg/150px-Gibson_Girl_by_Charles_Dana_Gibson.jpg"
     },
     {
         "year": 1910,
@@ -275,7 +268,7 @@
         "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Shochikubai_kanzashi.jpg/150px-Shochikubai_kanzashi.jpg"
     },
     {
-        "year": -1350,
+        "year": 1350,
         "event": "Cotehardie",
         "difficulty": 3,
         "info": "The cotehardie, a fitted medieval dress, gains popularity.",
@@ -449,98 +442,5 @@
         "info": "The affordability of the Model T impacts fashion trends.",
         "url": "https://en.wikipedia.org/wiki/Ford_Model_T",
         "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/1925_Ford_Model_T_touring.jpg/150px-1925_Ford_Model_T_touring.jpg"
-    },
-    {
-        "year": 1910,
-        "event": "Hobble Skirt",
-        "difficulty": 3,
-        "info": "The hobble skirt restricts women's movement.",
-        "url": "https://en.wikipedia.org/wiki/Hobble_skirt",
-        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/HobbleSkirtPostcard.jpg/150px-HobbleSkirtPostcard.jpg"
-    },
-    {
-        "year": 1920,
-        "event": "Flapper Era",
-        "difficulty": 4,
-        "info": "Flappers embrace shorter dresses and a liberated style.",
-        "url": "https://en.wikipedia.org/wiki/Flapper",
-        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Louise_Brooks_ggbain_32453u_crop.jpg/150px-Louise_Brooks_ggbain_32453u_crop.jpg"
-    },
-    {
-        "year": 1930,
-        "event": "Golden Age of Hollywood",
-        "difficulty": 3,
-        "info": "Hollywood stars influence glamorous fashion trends.",
-        "url": "https://en.wikipedia.org/wiki/Hollywood_Golden_Age",
-        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Clark_Gable_and_Vivien_Leigh_-_Wind.jpg/150px-Clark_Gable_and_Vivien_Leigh_-_Wind.jpg"
-    },
-    {
-        "year": 1940,
-        "event": "Utility Fashion",
-        "difficulty": 3,
-        "info": "WWII leads to practical utility clothing styles.",
-        "url": "https://en.wikipedia.org/wiki/1940s_in_fashion"
-    },
-    {
-        "year": 1950,
-        "event": "New Look by Dior",
-        "difficulty": 2,
-        "info": "Christian Dior introduces the elegant 'New Look' silhouette.",
-        "url": "https://en.wikipedia.org/wiki/1970s_in_fashion",
-        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Lars_Jacob_et_al_%26_fashions_in_San_Diego_1971.jpg/150px-Lars_Jacob_et_al_%26_fashions_in_San_Diego_1971.jpg"
-    },
-    {
-        "year": 1960,
-        "event": "Swinging Sixties",
-        "difficulty": 3,
-        "info": "The '60s bring bold and mod fashion statements.",
-        "url": "https://en.wikipedia.org/wiki/Swinging_Sixties",
-        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Londons_Carnaby_Street%2C_1966.jpg/150px-Londons_Carnaby_Street%2C_1966.jpg"
-    },
-    {
-        "year": 1970,
-        "event": "Hippie Style",
-        "difficulty": 3,
-        "info": "Hippie fashion embraces a bohemian and free-spirited look.",
-        "url": "https://en.wikipedia.org/wiki/Hippie",
-        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Woodstock-kids.jpg/150px-Woodstock-kids.jpg"
-    },
-    {
-        "year": 1980,
-        "event": "Power Dressing",
-        "difficulty": 3,
-        "info": "Bold power dressing becomes popular in the workplace.",
-        "url": "https://en.wikipedia.org/wiki/Power_dressing"
-    },
-    {
-        "year": 1990,
-        "event": "Grunge Fashion",
-        "difficulty": 2,
-        "info": "Grunge style emerges with its anti-fashion statement.",
-        "url": "https://en.wikipedia.org/wiki/Grunge",
-        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Nirvana_around_1992.jpg/150px-Nirvana_around_1992.jpg"
-    },
-    {
-        "year": 2000,
-        "event": "Y2K Fashion",
-        "difficulty": 2,
-        "info": "The turn of the millennium inspires futuristic fashion.",
-        "url": "https://en.wikipedia.org/wiki/2000s_in_fashion",
-        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Women_on_holiday_-_Alvor_-_The_Algarve%2C_Portugal_%281469017357%29.jpg/150px-Women_on_holiday_-_Alvor_-_The_Algarve%2C_Portugal_%281469017357%29.jpg"
-    },
-    {
-        "year": 2010,
-        "event": "Athleisure Trend",
-        "difficulty": 2,
-        "info": "Athleisure blurs the line between sportswear and casualwear.",
-        "url": "https://en.wikipedia.org/wiki/Athleisure",
-        "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Athleisure-wear.jpg/150px-Athleisure-wear.jpg"
-    },
-    {
-        "year": 2015,
-        "event": "Gender-Neutral Fashion",
-        "difficulty": 3,
-        "info": "Fashion embraces inclusivity with gender-neutral styles.",
-        "url": "https://en.wikipedia.org/wiki/Gender_neutrality"
     }
 ]
