@@ -5,12 +5,14 @@ import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import Paper from "@mui/material/Paper";
 import Stack from "@mui/material/Stack";
+import useMediaQuery from '@mui/material/useMediaQuery';
 import Timeline from './Timeline';
 import StatsDisplay from './StatsDisplay';
 import Settings from './Settings';
 import { useAppState, useDispatch,
   findPlacementIndex, isCorrectlyPlaced } from './AppState';
-import { GameSummary } from './GameSummary';
+import GameSummary from './GameSummary';
+import GameInfo from './GameInfo';
 import Prompt from './Prompt';
 import {event} from './Decks';
 
@@ -39,6 +41,8 @@ export default function App() {
   const state = useAppState();
   const settings = state.settings;
 
+  const isBig = useMediaQuery((theme: any) => theme.breakpoints.up('sm'));
+
   const onInsert = (index: number) => {
     const events = state.events;
     const newEvent = state.newEvent as event;
@@ -64,14 +68,17 @@ export default function App() {
           direction="row"
           justifyContent="space-between"
           mt={{xs: 0.5, sm: 1, md: 1.5, lg: 2}}
+          alignItems='center'
         >
           <Stack
-            direction="row" justifyContent="flex-start" alignItems="baseline"
+            direction="row" justifyContent="flex-start" alignItems="center"
           >
-            <Typography variant="h4" component="h1">
+            <Typography variant={isBig ? 'h4' : 'h5'} component='h1'>
               Timeliner.AI
             </Typography>
+            <Box width={8}/>
             <Settings />
+            <GameInfo isOpen={state.isStart} />
           </Stack>
           <StatsDisplay wrong={wrong} right={right} streak={streak} />
         </Stack>

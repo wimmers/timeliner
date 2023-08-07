@@ -11,6 +11,7 @@ import IconButton from '@mui/material/IconButton';
 import SettingsIcon from '@mui/icons-material/SettingsRounded';
 import { useAppSettings, useUpdateSettings } from './AppState';
 import { decks } from './Decks';
+import Box from '@mui/material/Box';
 
 export default function FormDialog() {
   const [open, setOpen] = React.useState(false);
@@ -43,7 +44,7 @@ export default function FormDialog() {
   };
 
   return (
-    <>
+    <Box>
       <IconButton onClick={handleClickOpen} >
         <SettingsIcon />
       </IconButton>
@@ -109,6 +110,6 @@ export default function FormDialog() {
           <Button onClick={handleSave}>Save</Button>
         </DialogActions>
       </Dialog>
-    </>
+    </Box>
   );
 }

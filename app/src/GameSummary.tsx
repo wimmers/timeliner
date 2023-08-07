@@ -6,7 +6,7 @@ import { useDispatch, useAppSettings, useAppState } from "./AppState";
 import LabelTextComponent from "./LabelTextComponent";
 import Stack from "@mui/material/Stack";
 
-export function GameSummary() {
+export default function GameSummary() {
   const dispatch = useDispatch();
   const state = useAppState();
   const settings = useAppSettings();

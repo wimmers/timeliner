@@ -9,6 +9,7 @@ interface AppSettings {
 }
 
 interface AppState {
+  isStart: boolean,
   wrong: number,
   right: number,
   streak: number,
@@ -30,6 +31,7 @@ type AppAction =
 | {type: 'insert', index: number, event?: event}
 | {type: 'wrong'}
 | {type: 'resetColor'}
+| {type: 'startGame'}
 
 const pickNextEvent = (state: AppState): AppState => {
   const unusedIndices = state.unusedIndices as number[];
@@ -134,6 +136,11 @@ function stateReducer(state: AppState, action: AppAction): AppState {
         settings: action.settings
       }
     }
+    case 'startGame': {
+      return {...state,
+        isStart: false
+      }
+    }
   }
 }
 
@@ -145,6 +152,7 @@ const initialSettings: AppSettings = {
 };
 
 const initialState: AppState = {
+  isStart: true,
   wrong: 0,
   right: 0,
   streak: 0,
