@@ -6,10 +6,11 @@ import fashion from './fashion.json';
 // import veganism from './veganism.json';
 import architecture from './architecture.json';
 
-export type event = {
+type pre_event = {
   year: string | number,
+  approximate?: boolean,
   event: string,
-  timestamp: number,
+  timestamp?: number,
   difficulty?: number,
   url?: string,
   info?: string,
@@ -17,16 +18,44 @@ export type event = {
   misplaced?: boolean // only for app state
 };
 
-export const convert = (deck: event[]): event[] =>
-  deck.map(event =>
-    event.timestamp ? event : {...event, timestamp: event.year as number});
+export type event = pre_event & {
+  timestamp: number
+}
 
-export const decks = [
-  {"name": "Fashion", "value": convert(fashion as event[])},
-  {"name": "Easy 1", "value": events0 as event[]},
-  {"name": "Easy 2", "value": events1 as event[]},
-  {"name": "Inventions", "value": inventions as event[]},
-  {"name": "Climate Change", "value": climate as event[]},
-  // {"name": "Veganism", "value": convert(veganism as event[])},
-  {"name": "Architecture", "value": convert(architecture as event[])},
+export const convert = (deck: pre_event[]): event[] =>
+  deck.map(event => {
+    if (event.timestamp) {
+      return event as event;
+    }
+    if (typeof event.year === 'string') {
+      throw new Error(`Cannot convert string to timestamp: ${event.year}`);
+    }
+    return {...event, timestamp: event.year}
+  });
+
+export type pre_deck = {
+  name: string,
+  info?: string,
+  events: pre_event[]
+}
+
+export type deck = pre_deck & {
+  events: event[]
+}
+
+const meta_decks: pre_deck[] = [
+];
+
+export const convert_deck = (deck: pre_deck): deck => ({
+  ...deck,
+  events: convert(deck.events)
+})
+
+export const decks: deck[] = [...meta_decks.map(convert_deck),
+  {"name": "Easy 1", "events": events0},
+  {"name": "Easy 2", "events": events1},
+  {"name": "Inventions", "events": inventions},
+  {"name": "Climate Change", "events": convert(climate)},
+  // {"name": "Veganism", "events": convert(veganism)},
+  {"name": "Architecture", "events": convert(architecture)},
 ];

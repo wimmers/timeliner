@@ -11,7 +11,7 @@ import IconButton from '@mui/material/IconButton';
 import SettingsIcon from '@mui/icons-material/SettingsRounded';
 import FileDialog from './FileDialog';
 import { useAppSettings, useUpdateSettings } from './AppState';
-import { decks, convert } from './Decks';
+import { pre_deck, event, decks, convert, convert_deck } from './Decks';
 import Box from '@mui/material/Box';
 
 export default function FormDialog() {
@@ -45,10 +45,18 @@ export default function FormDialog() {
     setSettings({...settings, prompt: event.target.value});
   };
 
-  const handleFileLoaded = ({data, name}: any) => {
-    data = convert(data);
-    decks.push({name, value: data});
-    setSettings({...settings, deck: data});
+  const handleFileLoaded = (
+    {data, name}: {data: pre_deck | event[], name: string}
+  ) => {
+    let deck;
+    if ("name" in data) {
+      deck = convert_deck(data);
+    }
+    else {
+      deck = {name, events: convert(data)};
+    }
+    decks.push(deck);
+    setSettings({...settings, deck});
   };
 
   return (
@@ -68,9 +76,9 @@ export default function FormDialog() {
               onChange={handleDeckChange}
             >
               {
-                decks.map(({name, value}, index: number) =>
-                  <MenuItem value={value as unknown as string} key={index}>
-                    {name}
+                decks.map((deck, index: number) =>
+                  <MenuItem value={deck as unknown as string} key={index}>
+                    {deck.name}
                   </MenuItem>
                 )
               }

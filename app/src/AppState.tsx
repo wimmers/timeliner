@@ -1,9 +1,9 @@
 import React, { createContext, useContext, useReducer } from 'react';
-import {event, decks} from './Decks';
+import {event, deck, decks} from './Decks';
 
 interface AppSettings {
   blinkTimeout: number,
-  deck: event[],
+  deck: deck,
   mode: 'three-lives' | 'forever',
   prompt: 'text' | 'image' | 'both',
 }
@@ -27,7 +27,7 @@ interface AppState {
 type AppAction =
 | {type: 'updateSettings', settings: AppSettings}
 | {type: 'resetStats'}
-| {type: 'changeDeck', deck: event[]}
+| {type: 'changeDeck', deck: deck}
 | {type: 'insert', index: number, event?: event}
 | {type: 'wrong'}
 | {type: 'resetColor'}
@@ -44,7 +44,7 @@ const pickNextEvent = (state: AppState): AppState => {
   }
   const i = Math.floor(Math.random()*unusedIndices.length);
   const index = unusedIndices[i];
-  const event = state.settings.deck[index];
+  const event = state.settings.deck.events[index];
   unusedIndices.splice(i, 1);
   return ({
     ...state,
@@ -82,7 +82,7 @@ function stateReducer(state: AppState, action: AppAction): AppState {
       const newDeck = action.deck;
       const state1 = {...state,
         settings: {...settings, deck: newDeck},
-        unusedIndices: newDeck.map((_, index) => index),
+        unusedIndices: newDeck.events.map((_, index) => index),
       }
       const state2 = pickNextEvent(state1);
       const firstEvent = state2.newEvent as event;
@@ -146,7 +146,7 @@ function stateReducer(state: AppState, action: AppAction): AppState {
 
 const initialSettings: AppSettings = {
   blinkTimeout: 150,
-  deck: decks[0]["value"],
+  deck: decks[0],
   mode: 'three-lives',
   prompt: 'both',
 };
@@ -166,7 +166,7 @@ const initialState: AppState = {
 const initializeState = (): AppState =>
   stateReducer(initialState, {
     type: 'changeDeck',
-    deck: decks[0]["value"],
+    deck: decks[0],
   });
 
 const StateContext = createContext<AppState>(initialState);

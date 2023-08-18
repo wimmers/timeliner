@@ -55,22 +55,32 @@ export default function GameInfo({isOpen}: {isOpen?: boolean}) {
           </Stack>
         </DialogContent>
         <DialogContent>
-          <InputLabel id="select-deck-label">Deck</InputLabel>
-            <Select
-              labelId="select-deck-label"
-              id="select-deck"
-              value={settings.deck}
-              label="Deck"
-              onChange={handleDeckChange}
-            >
-              {
-                decks.map(({name, value}, index: number) =>
-                  <MenuItem value={value as unknown as string} key={index}>
-                    {name}
-                  </MenuItem>
-                )
-              }
-            </Select>
+          <Stack spacing={1}>
+            <Box>
+              <InputLabel id="select-deck-label">Deck</InputLabel>
+                <Select
+                  labelId="select-deck-label"
+                  id="select-deck"
+                  value={settings.deck}
+                  label="Deck"
+                  onChange={handleDeckChange}
+                >
+                  {
+                    decks.map((deck, index: number) =>
+                      <MenuItem value={deck as unknown as string} key={index}>
+                        {deck.name}
+                      </MenuItem>
+                    )
+                  }
+                </Select>
+            </Box>
+            {
+              settings.deck.info &&
+              <DialogContentText>
+                <div dangerouslySetInnerHTML={{__html: settings.deck.info}}/>
+              </DialogContentText>
+            }
+          </Stack>
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose}>Okay, let's go!</Button>
