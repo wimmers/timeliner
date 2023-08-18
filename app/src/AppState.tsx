@@ -204,7 +204,7 @@ export function useAppState() {
 export function useDispatch() {
   const dispatch = useContext(DispatchContext);
   if (!dispatch) {
-    throw "Dispatch is not initialized!";
+    throw Error("Dispatch is not initialized!");
   }
   return dispatch;
 }
@@ -218,8 +218,7 @@ export function useUpdateSettings() {
   const dispatch = useDispatch();
 
   if (!dispatch) {
-    console.error("Dispatch not initialized!");
-    return () => {};
+    throw Error("Dispatch not initialized!");
   }
 
   return (newSettings: AppSettings) => {
