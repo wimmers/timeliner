@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/timeliner/static/js/main.a647ea32.js",
+    "main.js": "/timeliner/static/js/main.ed28b64d.js",
     "index.html": "/timeliner/index.html",
-    "main.a647ea32.js.map": "/timeliner/static/js/main.a647ea32.js.map"
+    "main.ed28b64d.js.map": "/timeliner/static/js/main.ed28b64d.js.map"
   },
   "entrypoints": [
-    "static/js/main.a647ea32.js"
+    "static/js/main.ed28b64d.js"
   ]
 }
