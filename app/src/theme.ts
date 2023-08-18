@@ -1,9 +1,9 @@
+import { PaletteMode } from '@mui/material';
 import { red } from '@mui/material/colors';
 import { createTheme } from '@mui/material/styles';
 
-// A custom theme for this app
-const theme = createTheme({
-  palette: {
+export default function getTheme(colorMode: PaletteMode) {
+  const basePalette = {
     primary: {
       main: '#556cd6',
     },
@@ -12,8 +12,17 @@ const theme = createTheme({
     },
     error: {
       main: red.A400,
-    },
-  },
-});
-
-export default theme;
+    }
+  };
+  const options = colorMode === 'light' ? {
+    palette: {
+      ...basePalette,
+      mode: colorMode
+    }
+  } : {
+    palette: {
+      mode: colorMode
+    }
+  }
+  return createTheme(options);
+}

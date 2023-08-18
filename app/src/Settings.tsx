@@ -13,11 +13,14 @@ import FileDialog from './FileDialog';
 import { useAppSettings, useUpdateSettings } from './AppState';
 import { pre_deck, event, decks, convert, convert_deck } from './Decks';
 import Box from '@mui/material/Box';
+import ColorModeSwitch from './ColorModeSwitch';
+import FormControlLabel from '@mui/material/FormControlLabel';
 
 export default function FormDialog() {
   const [open, setOpen] = useState(false);
   const [openFileDialog, setOpenFileDialog] = useState(false);
-  const [settings, setSettings] = useState(useAppSettings());
+  const appSettings = useAppSettings();
+  const [settings, setSettings] = useState(appSettings);
   const updateSettings = useUpdateSettings();
 
   const handleClickOpen = () => {
@@ -45,6 +48,12 @@ export default function FormDialog() {
     setSettings({...settings, prompt: event.target.value});
   };
 
+  const handleColorModeChange = (_: any, checked: boolean) => {
+    const colorMode = checked ? 'dark' : 'light';
+    setSettings({...settings, colorMode});
+    updateSettings({...appSettings, colorMode});
+  };
+
   const handleFileLoaded = (
     {data, name}: {data: pre_deck | event[], name: string}
   ) => {
@@ -59,6 +68,12 @@ export default function FormDialog() {
     setSettings({...settings, deck});
   };
 
+  const colorModeSwitch =
+    <ColorModeSwitch
+      onChange={handleColorModeChange}
+      checked={settings.colorMode === 'dark'}
+    />;
+
   return (
     <Box>
       <IconButton onClick={handleClickOpen} >
@@ -66,6 +81,12 @@ export default function FormDialog() {
       </IconButton>
       <Dialog open={open} onClose={handleClose}>
         <DialogTitle>Settings</DialogTitle>
+        <DialogContent>
+          <FormControlLabel
+            control={colorModeSwitch}
+            label={`Dark mode: ${settings.colorMode === 'dark' ? 'on' : 'off'}`}
+          />
+        </DialogContent>
         <DialogContent>
           <InputLabel id="select-deck-label">Deck</InputLabel>
             <Select

@@ -1,10 +1,28 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom/client';
 import CssBaseline from '@mui/material/CssBaseline';
-import { ThemeProvider } from '@mui/material/styles';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 import App from './App';
-import theme from './theme';
-import { StateProvider } from './AppState';
+import getTheme from './theme';
+import { StateProvider, useAppSettings } from './AppState';
+
+function Main() {
+  const settings = useAppSettings();
+
+  const theme = React.useMemo(
+    () => getTheme(settings.colorMode),
+    [settings.colorMode],
+  );
+
+  return (
+    <StateProvider>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <App />
+      </ThemeProvider>
+    </StateProvider>
+  );
+}
 
 const rootElement = document.getElementById('root');
 
@@ -15,11 +33,6 @@ else {
   const root = ReactDOM.createRoot(rootElement);
 
   root.render(
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <StateProvider>
-        <App />
-      </StateProvider>
-    </ThemeProvider>,
+      <Main/>
   );
 }

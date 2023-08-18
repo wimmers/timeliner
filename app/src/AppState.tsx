@@ -1,11 +1,13 @@
 import React, { createContext, useContext, useReducer } from 'react';
 import {event, deck, decks} from './Decks';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 interface AppSettings {
   blinkTimeout: number,
   deck: deck,
   mode: 'three-lives' | 'forever',
   prompt: 'text' | 'image' | 'both',
+  colorMode: 'dark' | 'light';
 }
 
 interface AppState {
@@ -149,6 +151,7 @@ const initialSettings: AppSettings = {
   deck: decks[0],
   mode: 'three-lives',
   prompt: 'both',
+  colorMode: 'dark',
 };
 
 const initialState: AppState = {
@@ -163,17 +166,27 @@ const initialState: AppState = {
   unusedIndices: [],
 };
 
-const initializeState = (): AppState =>
-  stateReducer(initialState, {
+const initializeState = (colorMode: 'dark' | 'light'): AppState => {
+  const state = {...initialState,
+    settings: {...initialState.settings, colorMode}
+  };
+  return stateReducer(state, {
     type: 'changeDeck',
     deck: decks[0],
   });
+};
 
 const StateContext = createContext<AppState>(initialState);
 const DispatchContext = createContext<React.Dispatch<AppAction> | null>(null);
 
 export function StateProvider({children}: {children: React.ReactNode}) {
-  const [state, dispatch] = useReducer(stateReducer, null, initializeState);
+  // Retrieve initial color mode from user preference
+  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
+  const colorMode = prefersDarkMode ? 'dark' : 'light';
+
+  // Initialize state with user's color mode preference
+  const [state, dispatch] =
+    useReducer(stateReducer, colorMode, initializeState);
 
   return (
     <StateContext.Provider value={state}>
@@ -201,7 +214,7 @@ export function useAppSettings() {
 }
 
 export function useUpdateSettings() {
-  const state= useAppState();
+  const state = useAppState();
   const dispatch = useDispatch();
 
   if (!dispatch) {
