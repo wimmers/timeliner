@@ -15,12 +15,10 @@ function Main() {
   );
 
   return (
-    <StateProvider>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <App />
-      </ThemeProvider>
-    </StateProvider>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <App />
+    </ThemeProvider>
   );
 }
 
@@ -33,6 +31,8 @@ else {
   const root = ReactDOM.createRoot(rootElement);
 
   root.render(
-      <Main/>
+    <StateProvider>
+      <Main />
+    </StateProvider>
   );
 }
