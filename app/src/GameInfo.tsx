@@ -77,7 +77,7 @@ export default function GameInfo({isOpen}: {isOpen?: boolean}) {
             {
               settings.deck.info &&
               <DialogContentText>
-                <div dangerouslySetInnerHTML={{__html: settings.deck.info}}/>
+                <span dangerouslySetInnerHTML={{__html: settings.deck.info}}/>
               </DialogContentText>
             }
           </Stack>
