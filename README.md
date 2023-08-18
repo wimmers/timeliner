@@ -3,6 +3,8 @@
 Timeliner is a little puzzle game where you need to put historic events into
 the right order.
 
+[Play here!](https://wimmers.github.io/timeliner/)
+
 ## Usage
 
 You see a timeline of events in the middle of the screen.
